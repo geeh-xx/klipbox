@@ -1,11 +1,11 @@
-<h1>New Article</h1>
+<h1>Nova Noticia</h1>
 
 <%= form_for :article, url: articles_path do |f| %>
 
     <% if not @article.nil? and @article.errors.any? %>
         <div id="error_explanation">
-          <h2><%= pluralize(@article.errors.count, "error") %> prohibited
-            this article from being saved:</h2>
+          <h2>
+            Para que essa noticia seja salva:</h2>
           <ul>
             <% @article.errors.full_messages.each do |msg| %>
                 <li><%= msg %></li>
@@ -15,23 +15,29 @@
     <% end %>
 
     <p>
-      <%= f.label :title %><br>
+      <%= f.label :Titulo %><br>
       <%= f.text_field :title %>
     </p>
 
     <p>
-      <%= f.label :text %><br>
+      <%= f.label :Noticia %><br>
       <%= f.text_area :text %>
     </p>
 
     <p>
-      <%= f.label :date %><br>
+      <%= f.label :Data %><br>
       <%= f.date_select :date %>
     </p>
 
+
+
     <p>
-      <%= f.submit %>
+      <button class="btn waves-effect waves-light" type="submit" name="action">
+        <%= f.submit :"Salvar Noticia"%>
+      </button>
     </p>
+    <br />
 <% end %>
 
-<%= link_to '<- Back', articles_path %>
+
+<%= link_to 'Voltar', articles_path %>

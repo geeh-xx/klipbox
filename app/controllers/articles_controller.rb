@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+    include ActiveModel::Validations
+
   def index
     @articles = Article.all
   end
