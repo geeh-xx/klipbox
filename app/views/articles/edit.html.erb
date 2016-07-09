@@ -1,6 +1,8 @@
-<h1>Nova Noticia</h1>
+<% provide(:title, "Editar Noticia") %>
 
-<%= form_for :article, url: articles_path do |f| %>
+<h1>Editar Noticia</h1>
+
+<%= form_for(@article) do |f| %>
 
     <% if not @article.nil? and @article.errors.any? %>
         <div id="error_explanation">
@@ -28,8 +30,6 @@
       <%= f.label :Data %><br>
       <%= f.date_select :date %>
     </p>
-
-
 
     <p>
       <button class="btn waves-effect waves-light" type="submit" name="action">

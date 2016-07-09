@@ -1,3 +1,4 @@
+<% provide(:title, "Edit user") %>
 <h1>Noticias</h1>
 
 <ul>
@@ -13,6 +14,10 @@
           </div>
           <div class="card-action">
             <%=  link_to 'Ver Noticia', article_url(article.id) %>
+
+            <%=  link_to 'Editar Noticia', edit_article_path(article) %>
+ 
+            <%=  link_to 'Deletar Noticia', article, method: :delete,data: { confirm: "Deseja realmente deletar estar noticia?" } %>
           </div>
         </div>
       </div>
