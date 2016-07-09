@@ -1,0 +1,29 @@
+<h1>Busca de Noticias</h1>
+
+<%= form_for search_path, method: :get do |f| %>
+    <p>
+      <%= f.label "Pesquisar por" %>
+      <%= text_field_tag :q, params[:q] %>
+      <button class="btn waves-effect waves-light" type="submit" name="action">
+        <%= submit_tag "Buscar", name: nil %>
+      </button>
+    </p>
+<% end %>
+
+<ul>
+  <% @articles.each do |article| %>
+      <li>
+        <h3>
+          <%= link_to article.try(:highlight).try(:title) ? article.highlight.title[0].html_safe : article.title,
+                      controller: "articles",
+                      action: "show",
+                      id: article._id%>
+        </h3>
+        <% if article.try(:highlight).try(:text) %>
+            <% article.highlight.text.each do |snippet| %>
+                <p><%= snippet.html_safe %>...</p>
+            <% end %>
+        <% end %>
+      </li>
+  <% end %>
+</ul>
