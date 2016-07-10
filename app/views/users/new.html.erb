@@ -1,0 +1,44 @@
+<h1>Novo Usuario</h1>
+
+<%= form_for :user, url: users_path do |f| %>
+
+    <% if not @user.nil? and @user.errors.any? %>
+        <div id="error_explanation">
+          <h2 style="color:red;">
+            Para que esse Usuario seje salva</h2>
+          <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <p>
+      <i class="material-icons prefix">account_circle</i>
+      <%= f.label :Nome %><br>
+      <%= f.text_field :name %>
+    </p>
+
+    <p>
+      <i class="material-icons prefix">email</i>
+      <%= f.label :Email %><br>
+      <%= f.text_field :email %>
+    </p>
+
+    <p>
+      <i class="material-icons prefix">comment</i>
+      <%= f.label :Palavra %><br>
+      <%= f.text_field :word %>
+    </p>
+
+    <p>
+      <button class="btn waves-effect waves-light" type="submit" name="action">
+        <%= f.submit :"Salvar Usuario"%>
+      </button>
+    </p>
+    <br />
+<% end %>
+
+
+<%= link_to 'Voltar', users_path %>

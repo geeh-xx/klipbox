@@ -1,0 +1,26 @@
+<p>Se você ja possui um codigo de usuario basta digitar no campo logo abaixo, mas caso não tenha, realize<br />
+um <%= link_to 'cadastro', new_user_path%></p>
+<br />
+
+
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+  <a class="btn-floating btn-large red">
+    <i class="large material-icons">mode_edit</i>
+  </a>
+  <ul>
+    <li>
+      <%= link_to  users_path, class:"btn-floating btn-large red"  do%>
+          <i class="material-icons">search</i>
+      <%end %>
+    </li>
+
+    <li>
+      <%= link_to  new_user_path, class:"btn-floating btn-large red"  do%>
+        <i class="material-icons">add</i>
+      <%end %>
+    </li>
+  </ul>
+
+</div>
+
+
