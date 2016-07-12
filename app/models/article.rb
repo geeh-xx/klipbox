@@ -1,6 +1,5 @@
 require 'elasticsearch/model'
 class Article < ActiveRecord::Base
-  Elasticsearch::Model.client = Elasticsearch::Client.new log: true
   include Elasticsearch::Model
   include Elasticsearch::Model::Callbacks
 
