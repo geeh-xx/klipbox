@@ -27,7 +27,7 @@ gem 'elasticsearch-rails'
 gem 'sidekiq'
 gem 'mini_magick'
 gem 'rack-attack'
-
+gem 'bonsai-elasticsearch-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

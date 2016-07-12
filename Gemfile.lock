@@ -39,6 +39,7 @@ GEM
     arel (6.0.3)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bonsai-elasticsearch-rails (0.0.4)
     builder (3.2.2)
     byebug (9.0.5)
     coffee-rails (4.1.1)
@@ -179,6 +180,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bonsai-elasticsearch-rails
   byebug
   coffee-rails (~> 4.1.0)
   elasticsearch-model
