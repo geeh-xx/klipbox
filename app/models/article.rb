@@ -1,6 +1,6 @@
 require 'elasticsearch/model'
 class Article < ActiveRecord::Base
-  Elasticsearch::Model.client = Elasticsearch::Client.new log: true
+  Elasticsearch::Model.client = Elasticsearch::Client.new url: ENV['https://3u785wmp:c9xe4emd34pxoofr@ivy-9550028.us-east-1.bonsai.io'], log: true
   include Elasticsearch::Model
   include Elasticsearch::Model::Callbacks
 

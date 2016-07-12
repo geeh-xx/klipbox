@@ -21,7 +21,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/klipbox@Development__klipbox.coverage" NAME="Development: klipbox Coverage Results" MODIFIED="1468348939250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="klipbox" />
+    <SUITE FILE_PATH="coverage/klipbox@Development__klipbox.coverage" NAME="Development: klipbox Coverage Results" MODIFIED="1468349092737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="klipbox" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -76,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/app/models/article.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="67" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
+              <caret line="2" column="146" selection-start-line="2" selection-start-column="146" selection-end-line="2" selection-end-column="146" />
               <folding />
             </state>
           </provider>
@@ -713,12 +713,12 @@
       <workItem from="1468015151770" duration="4940000" />
       <workItem from="1468020367793" duration="19566000" />
       <workItem from="1468185869591" duration="3435000" />
-      <workItem from="1468346142549" duration="2804000" />
+      <workItem from="1468346142549" duration="2954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30745000" />
+    <option name="totallyTimeSpent" value="30895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
@@ -1114,7 +1114,7 @@
     <entry file="file://$PROJECT_DIR$/app/models/article.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="67" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
+          <caret line="2" column="146" selection-start-line="2" selection-start-column="146" selection-end-line="2" selection-end-column="146" />
           <folding />
         </state>
       </provider>
